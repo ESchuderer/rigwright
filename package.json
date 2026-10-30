@@ -1,8 +1,28 @@
 {
   "name": "rigwright",
   "version": "0.0.1",
-  "description": "Placeholder release. The name is reserved; no functionality yet.",
-  "license": "UNLICENSED",
-  "repository": { "type": "git", "url": "git+https://github.com/ESchuderer/rigwright.git" },
-  "files": ["README.md"]
+  "description": "Successor of BenchKeeper. Placeholder release, no functionality yet.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ESchuderer/rigwright.git"
+  },
+  "type": "module",
+  "files": [
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "lint": "biome lint .",
+    "knip": "knip",
+    "dup": "jscpd --baseline .jscpd-baseline.json --fail-on-new-clones",
+    "check": "npm run lint && npm run knip && npm run dup"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.2",
+    "jscpd": "5.4.2",
+    "knip": "6.42.1"
+  }
 }
