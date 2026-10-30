@@ -1,0 +1,8 @@
+{
+  "name": "rigwright",
+  "version": "0.0.1",
+  "description": "Placeholder release. The name is reserved; no functionality yet.",
+  "license": "UNLICENSED",
+  "repository": { "type": "git", "url": "git+https://github.com/ESchuderer/rigwright.git" },
+  "files": ["README.md"]
+}
