@@ -9,6 +9,6 @@ jobs:
   sonar:
     permissions:
       contents: read
-    uses: ESchuderer/repo-baseline/.github/workflows/sonar.yml@c219314cbff836df46aeb702814482fd94a9b8d6 # main
+    uses: ESchuderer/repo-standards/.github/workflows/sonar.yml@c219314cbff836df46aeb702814482fd94a9b8d6 # main
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
